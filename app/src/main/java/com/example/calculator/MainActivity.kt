@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
-import android.util.Log
-import android.widget.TextView
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -72,6 +70,34 @@ class MainActivity : AppCompatActivity() {
             isDot = false
             input.append(view.text)
 
+    }
+
+    fun addSin(view: View){
+        if(!isDot){
+            textView.append("sin(")
+            input.append("sin(")
+        }
+    }
+
+    fun addCos(view: View){
+        if(!isDot){
+            textView.append("cos(")
+            input.append("cos(")
+        }
+    }
+
+    fun addTg(view: View){
+        if(!isDot){
+            textView.append("tg(")
+            input.append("tan(")
+        }
+    }
+
+    fun addPrc(view: View){
+        if(!isDot){
+            textView.append("%")
+            input.append("/100")
+        }
     }
 
     fun onEqual(view : View){

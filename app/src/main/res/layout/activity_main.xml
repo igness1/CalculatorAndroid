@@ -46,6 +46,7 @@
             android:layout_height="match_parent"
             android:layout_margin="1sp"
             android:layout_weight="1"
+            android:onClick="addPrc"
             android:text="%"
             android:textSize="24sp" />
 
@@ -89,17 +90,18 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
+
         <Button
             android:id="@+id/buttonSin"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="1sp"
             android:layout_weight="1"
+            android:onClick="addSin"
             android:text="sin"
             android:textAllCaps="false"
             android:textSize="24sp"
             app:backgroundTint="@color/purple_500" />
-
 
         <Button
             android:id="@+id/buttonCos"
@@ -107,6 +109,7 @@
             android:layout_height="match_parent"
             android:layout_margin="1sp"
             android:layout_weight="1"
+            android:onClick="addCos"
             android:text="cos"
             android:textAllCaps="false"
             android:textSize="24sp"
@@ -118,6 +121,7 @@
             android:layout_height="match_parent"
             android:layout_margin="1sp"
             android:layout_weight="1"
+            android:onClick="addTg"
             android:text="tg"
             android:textAllCaps="false"
             android:textSize="24sp"
