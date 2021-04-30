@@ -28,7 +28,7 @@ Possible mathematical operations:
 ## Screenshots
 Example screenshots of calculator.
 
-<img src=./img/screenshot.png width="400" ><img src=./img/screenshot1.png width="400" >
+<img src=./img/screenshot.png width="400" >  <img src=./img/screenshot1.png width="400" >
 
 
 ## Technologies
