@@ -69,17 +69,17 @@ fun onEqual(view : View){
 
 ## Features
 List of features ready and TODOs for future development
-* Printing number and mathematical symbols on the screen
-* Clear UI
-* Implementation the additional library for mathematical operations
-* Adding typed by user mathematical operation to ExpressionBuilder
-* Writing out the result of mathematical operation
+* Printing number and mathematical symbols on the screen.
+* Clear UI.
+* Implementation the additional library for mathematical operations.
+* Adding typed by user mathematical operation to ExpressionBuilder.
+* Writing out the result of mathematical operation.
 
 
 
 To-do list:
-* Writing out the previous mathematical operation that user typed earlier
-* Trying to write mathematical library by myself
+* Writing out the previous mathematical operation that user typed earlier.
+* Trying to write mathematical library by myself.
 
 ## Status
 Project is: _in progress_
