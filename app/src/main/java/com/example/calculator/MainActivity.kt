@@ -6,6 +6,8 @@ import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
+import java.lang.ArithmeticException
+import java.lang.IllegalStateException
 
 class MainActivity : AppCompatActivity() {
 
@@ -101,6 +103,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onEqual(view : View){
+
         if (!isError) {
 
             try {
@@ -108,12 +111,16 @@ class MainActivity : AppCompatActivity() {
                 var result = ExpressionBuilder(input.toString()).build().evaluate()
                 textView.text = result.toString()
 
-            } catch (ex: ArithmeticException) {
-
-                textView.text = "Error"
-                isError = true
+            } catch (e: Exception) {
+                when (e) {
+                    is ArithmeticException, is IllegalStateException -> {
+                        textView.text = "Error"
+                        isError = true
+                    }
+                }
 
             }
+
         }
     }
 
